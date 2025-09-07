@@ -36,7 +36,7 @@ export default function App() {
     }
 
     function handleAddFriend(newFriend) {
-        setFriends((friends) => setFriends([...friends, newFriend]));
+        setFriends((friends) => [...friends, newFriend]);
         setShowAddFriend(false); // close the formAddFriend after addding a new friend
     }
 
